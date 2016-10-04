@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap-dialog.min.css">
+</head>
+<body>
+<div class="col-md-12" align="center">
+    <h2>Реєстрація</h2>
+</div>
+    <div class="col-md-12">
+        <div class="col-md-3"></div>
+        <div class="col-md-9">
+            <form class="form-horizontal" id="informationForm">
+
+                <div class="form-group">
+                    <label class="control-label col-md-3" for="nameShop">Назва магазину:</label>
+                    <div class="col-md-5">
+                         <input type="text" class="form-control" id="nameShop" placeholder="Введіть назву магазину">
+                    </div>
+                </div>
+
+            </form>
+            <form class="form-horizontal">
+
+                <div class="form-group">
+                    <label class="control-label col-md-3" for="adressShop">Адреса:</label>
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" id="adressShop" placeholder="Введіть адресу">
+                    </div>
+                </div>
+
+            </form>
+            <form class="form-horizontal">
+
+                <div class="form-group">
+                    <label class="control-label col-md-3" for="seller">Кількість продавців:</label>
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" id="seller" placeholder="Введіть кількість продавців">
+                    </div>
+                </div>
+
+            </form>
+            <div class="col-md-offset-3 col-md-9">
+                <input type="submit" class="btn btn-primary" value="Зберегти">
+            </div>
+            <p id="result"></p>
+            <script>
+                var form = document.getElementById('informationForm');
+                form.onsubmint = function(e){
+                    e.preventDefault();
+                   var result = document.getElementById('informationForm');
+                    result.innerHTML = form.informationForm.value;
+                };
+            </script>
+        </div>
+    </div>
+</body>
+</html>

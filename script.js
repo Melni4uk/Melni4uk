@@ -9,4 +9,25 @@ form.onsubmit  = function(event){
     event.preventDefault();
     console.log(form.adress);
 };*/
-function processForm() {console.log("Hello")}
+
+
+/*var form = document.getElementById('informationForm');
+form.onsubmit = function(e){
+    e.preventDefault();
+    console.log(form.informationForm);
+};*/
+function processForm() {
+    event.preventDefault();
+
+
+    var inForm = document.getElementById('informationForm');
+
+    var i;
+    var container = [];
+    for (i = 0; i <= 2; i++){
+        container [i]=inForm.getElementsByTagName('input');
+        console.log(container[i]);
+    }
+
+
+}
